@@ -6,4 +6,6 @@
     <strong>Institución: </strong>Universidad Estatal Amazónica <br>
     <strong>Carrera: </strong>Ingeniería en Tecnologías de la Información y Comunicación <br>
     <strong>Estudiante: </strong>Jessica Alexandra Pujota Puga <br>
+    <strong>Paralelo: </strong>Primer Nivel (D) <br>
+
 </p>
