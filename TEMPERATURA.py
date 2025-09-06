@@ -121,10 +121,16 @@ temperaturas = [
     ]
 ]
 # Calcular el promedio de temperaturas para cada ciudad y semana
-
-ciudades = ["Tabacundo", "Cayambe", "Ayora"]
-for ciudad_idx, ciudad in enumerate(temperaturas):
-    for semana_idx, semana in enumerate(ciudad):
-        suma_temperaturas = sum([dia["temp"] for dia in semana])
-        promedio = suma_temperaturas / len(semana)
-        print(f"Promedio de temperaturas en {ciudades[ciudad_idx]}, Semana {semana_idx + 1}: {promedio:.2f} grados")
+i=0;
+for ciudad in temperaturas:
+    i=i+1
+    print(f'Ciudad No. {i}')
+    j=0
+    for semana in ciudad:
+        j=j+1
+        suma = 0
+        for dia in semana:
+            suma += dia['temp']
+        promedio = round(suma / 7,2)
+        promedio_celsius = round((promedio - 32 ) * (5/9),2)
+        print(f'El promedio de de la semana No. {j} es: {promedio_celsius}')
